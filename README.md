@@ -1,13 +1,13 @@
 # claude_config
 
-`~/.claude` 
+`~/.claude` 중 PC 간에 공유할 설정만 git 으로 관리한다.
 
 ## 추적 대상
 
 - `CLAUDE.md` — 전역 지침
 - `settings.json` — 권한, 모델, 플러그인(`enabledPlugins` / `extraKnownMarketplaces`)
 - `skills/` — 직접 만든 스킬 (`skills/synced/` 는 claude.ai 에서 자동 동기화되므로 제외)
-- `agents/`
+- `agents/`, `commands/` — 만들면 자동으로 추적됨
 
 그 외(`.credentials.json`, `settings.local.json`, `projects/`, `sessions/`, `plugins/`, 캐시 등)는
 `.gitignore` 의 화이트리스트 방식으로 전부 제외된다.
