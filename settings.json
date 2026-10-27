@@ -47,11 +47,21 @@
     ]
   },
   "model": "opus",
+  "enabledPlugins": {
+    "agent-skills@addy-agent-skills": true,
+    "dotnet-skills@dotnet-skills": true
+  },
   "extraKnownMarketplaces": {
     "addy-agent-skills": {
       "source": {
         "source": "github",
         "repo": "addyosmani/agent-skills"
+      }
+    },
+    "dotnet-skills": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/Aaronontheweb/dotnet-skills.git"
       }
     }
   },
@@ -69,9 +79,7 @@
       "effortLevel": "xhigh"
     }
   },
+  "theme": "auto",
   "remoteControlAtStartup": true,
-  "agentPushNotifEnabled": true,
-  "enabledPlugins": {
-    "agent-skills@addy-agent-skills": true
-  }
+  "agentPushNotifEnabled": true
 }

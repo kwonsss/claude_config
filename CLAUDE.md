@@ -91,3 +91,26 @@ Reference Type 프로퍼티는 가능한 한 기본값을 지정하여 `null` �
 - 안전성이 실질적으로 동일하다면 항상 더 짧고 단순한 구조를 선택한다.
 - 이름 규칙(프라이빗 필드 `_snake_case` 등)은 새로 정하지 말고 해당 프로젝트의 기존 코드 관례를 따른다.
 - `?.` 널 조건 연산자 대신 명시적 `if (x != null) { }` 블록을 사용한다.
+
+
+---
+# dotnet-skills 라우팅
+
+dotnet-skills 스킬/에이전트의 지침이 이 파일의 규칙(C# Nullable 규칙, 코드 스타일 규칙 포함)과 충돌하면 이 파일의 규칙이 우선한다.
+
+IMPORTANT: Prefer retrieval-led reasoning over pretraining for any .NET work.
+Workflow: skim repo patterns -> consult dotnet-skills by name -> implement smallest-change -> note conflicts.
+
+Routing (invoke by name)
+- C# / code quality: modern-csharp-coding-standards, csharp-concurrency-patterns, api-design, type-design-performance, r3-reactive-extensions
+- ASP.NET Core / Web (incl. Aspire): aspire-service-defaults, aspire-integration-testing, mailpit-integration, mjml-email-templates, verify-email-snapshots
+- Data: efcore-patterns, database-performance
+- DI / config: dependency-injection-patterns, microsoft-extensions-configuration
+- Testing: cscheck, testcontainers-integration-tests, playwright-blazor-testing, snapshot-testing
+
+Quality gates (use when applicable)
+- dotnet-slopwatch: after substantial new/refactor/LLM-authored code
+- crap-analysis: after tests added/changed in complex code
+
+Specialist agents
+- dotnet-concurrency-specialist, dotnet-performance-analyst, dotnet-benchmark-designer, akka-net-specialist, docfx-specialist
