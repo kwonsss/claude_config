@@ -1,0 +1,15 @@
+# ~/.claude 는 대부분 런타임 상태(세션, 캐시, 자격증명)이므로
+# 전부 무시한 뒤 공유할 설정만 화이트리스트로 추적한다.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CLAUDE.md
+!/settings.json
+
+# 직접 만든 스킬/에이전트/커맨드. skills/synced 는 claude.ai 에서 자동 동기화되므로 제외.
+!/skills/
+/skills/synced/
+!/agents/
+!/commands/
